@@ -175,7 +175,7 @@ public class GUI extends JFrame implements KeyListener {
 		
 		JScrollPane namesScroll = new JScrollPane(names);
 		namesScroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-		namesScroll.setBounds(880, 426, 290, 445);
+		namesScroll.setBounds(880, 506, 290, 365);
 		contentPane.add(namesScroll);
 		
 		JButton btnLISTELADEN = new JButton("Namensliste laden...");
@@ -202,7 +202,7 @@ public class GUI extends JFrame implements KeyListener {
 		btnLISTELADEN.setBounds(880, 345, 290, 70);
 		contentPane.add(btnLISTELADEN);
 		
-		JToggleButton tglbtnFreundemodus = new JToggleButton("Freunde-Modus");
+		JToggleButton tglbtnFreundemodus = new JToggleButton("Freunde-Modus (Ohne Funktion)");
 		tglbtnFreundemodus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -213,7 +213,12 @@ public class GUI extends JFrame implements KeyListener {
 				
 			}
 		});
-		tglbtnFreundemodus.setBounds(1180, 21, 107, 394);
+		
+		JButton btnDRUCKEN = new JButton("Drucken");
+		btnDRUCKEN.setBackground(Color.WHITE);
+		btnDRUCKEN.setBounds(880, 426, 290, 70);
+		contentPane.add(btnDRUCKEN);
+		tglbtnFreundemodus.setBounds(1180, 21, 290, 232);
 		contentPane.add(tglbtnFreundemodus);
 		
 		setVisible(true);
